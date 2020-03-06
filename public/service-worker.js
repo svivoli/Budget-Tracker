@@ -9,7 +9,7 @@ const FILES_TO_CACHE = [
   ];
 
 const CACHE_NAME = "static-cache-v2";
-const DATA_CACHE_NAME = "data-cache-v1";
+const DATA_CACHE_NAME = "data-cache-v2";
 
 // install
 self.addEventListener("install", function(event) {
@@ -54,13 +54,12 @@ self.addEventListener("fetch", function(evt) {
         }).catch(err => console.log(err))
       );
       return;
-    };
-    
+    }
     evt.respondWith(
-        caches.open(CACHE_NAME).then(cache => {
-          return cache.match(evt.request).then(response => {
-            return response || fetch(evt.request);
-          });
-        })
-      );
-    });
+      caches.open(CACHE_NAME).then(cache => {
+        return cache.match(evt.request).then(response => {
+          return response || fetch(evt.request);
+        });
+      })
+    );
+  });
