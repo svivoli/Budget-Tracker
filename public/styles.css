@@ -34,7 +34,14 @@ tr:nth-child(even) {
 
 .total {
   font-size: 150%;
-  text-decoration: underline;
+}
+
+.total, th, button {
+  font-family: 'Teko', sans-serif;
+}
+
+th {
+  font-size: 125%;
 }
 
 .form {

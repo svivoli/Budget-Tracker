@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <title>Budget Tracker</title>
@@ -49,6 +50,20 @@
           });
         });
       }
+
+    const request = window.indexedDB.open("budget", 1);
+
+    // Create an object store inside the onupgradeneeded method.
+    // table/collection
+    request.onupgradeneeded = ({ target }) => {
+      const db = target.result;
+      const objectStore = db.createObjectStore("budget");
+    };
+
+    // On success console the result.
+    request.onsuccess = event => {
+      console.log(request.result);
+    };
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
