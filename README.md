@@ -16,7 +16,7 @@ A budget tracker application with offline capabilities. Allows user to input exp
 ### Website Components
 
 1. Running Total
-2. Transaction Input Field
+2. Transaction Input Fields
 3. Add Funds/Subtract Funds buttons (deposit or withdrawal)
 4. Chart displaying transactions and amounts
 5. Graph displaying total over time

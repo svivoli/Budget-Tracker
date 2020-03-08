@@ -44,9 +44,17 @@ th {
   font-size: 125%;
 }
 
+button {
+  padding-top: 4px;
+}
+
 .form {
   margin-top: 25px;
   width: 100%;
+}
+
+input {
+  padding: 5px;
 }
 
 .transactions {
