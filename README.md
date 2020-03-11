@@ -31,7 +31,7 @@ A budget tracker application with offline capabilities. Allows user to input exp
 
 ## User Experience
 
-[budget-demo.gif]
+![Demo](budget-demo.gif)
 
 ## Developer Experience
 
