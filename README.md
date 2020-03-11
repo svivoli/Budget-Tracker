@@ -7,7 +7,7 @@
 
 ## Description
 
-A budget tracker application with offline capabilities. Allows user to input expenses and track overall total via a graph. A useful tool for tracking complete savings or for budgeting a specific category. User can input a transaction while offline and it will be displayed on the page then added to their transaction history when they are back online.
+A budget tracker application with offline capabilities. Allows user to input expenses and track overall total via a graph. A useful tool for tracking complete savings or for budgeting a specific category. User can input a transaction while offline and it will be displayed on the page then added to their transaction history when they are back online via indexedDB.
 
 ### Modules and Features
 
