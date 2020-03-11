@@ -2,7 +2,7 @@
 
 ## Links to Project
 
-[Live Site](https://track-your-budg3t.herokuapp.com/)
+[Live Site](https://track-your-budg3t.herokuapp.com/)  
 [GitHub Repository](https://github.com/svivoli/Budget-Tracker)
 
 ## Description
@@ -31,6 +31,7 @@ A budget tracker application with offline capabilities. Allows user to input exp
 
 ## User Experience
 
+[budget-demo.gif]
 
 ## Developer Experience
 
